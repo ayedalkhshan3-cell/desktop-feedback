@@ -1,0 +1,132 @@
+name: 🐞 Bug report
+description: Report a bug
+type: "bug"
+labels:
+  - "kind/bug"
+  - "needs-triage"body:
+body:ype: markdown
+  - type: markdown
+    attributes:
+      value: |      name: 🐞 Bug report
+      description: Report a bug
+      type: "bug"
+      labels:
+        - "kind/bug"
+        - "needs-triage"
+      
+      body:
+        - type: markdown
+          attributes:
+            value: |
+              **Thanks for taking the time to report a bug!**
+      
+        - type: textarea
+          attributes:
+            label: Description
+            description: Provide a description of the bug and reproduction steps.
+          validations:
+            required: true
+      
+        - type: textarea
+          attributes:
+            label: Environment
+            description: What version and environment are you using?
+          validations:
+            required: true
+      
+        - type: textarea
+          attributes:
+            label: Diagnostics
+            description: Provide a [Diagnostic ID](https://docs.docker.com/docker-for-windows/troubleshoot/#diagnose) either from inside the app or from the command line.
+        **Thanks for taking the time to report a bug!**
+        If this is a security issue, please email the [Docker Security team](mailto:security@docker.com) instead of opening a public issue.
+        If this is a security issue, please email the [Docker Security team](mailto:security@docker.com) instead of opening a public issue.
+        To help us investigate faster, please include:
+        To help us investigate faster, please include:ected vs. what actually happened.
+        - A clear description of the bug: what you expected vs. what actually happened.
+        - Steps to reproduce the issue.n.
+        - Version and system information.
+  - type: textarea
+    attributes:g report
+      label: Bug report
+      description: |de a description of the bug and reproduction steps.
+        Please provide a description of the bug and reproduction steps.
+      placeholder: |iption
+        ## Bug description? What were you expecting to happen instead?
+        What's going wrong? What were you expecting to happen instead?
+        ## Reproduction steps
+        ## Reproduction stepsions to make the bug appear.
+        Step-by-step instructions to make the bug appear.
+    validations:true
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:atform
+      label: Platform
+      multiple: false
+      description: |rm are you using?
+        Which platform are you using?
+      options:ows
+        - Windows
+        - macOS
+        - Linux
+        - Other:
+    validations:true
+      required: true
+  - type: textarea
+    id: version
+    attributes:rsion information
+      label: Version information
+      description: |de version and environment information.
+        Please provide version and environment information.
+        <details>
+        <details>⌨️ Collect version information from terminal</summary>
+        <summary>⌨️ Collect version information from terminal</summary>
+        Run the following commands in your favorite terminal and paste the output below:
+        Run the following commands in your favorite terminal and paste the output below:
+        ```bashversion && docker info
+        docker version && docker info
+        ```
+        </details>
+        </details>
+      render: bash
+      render: bash |
+      placeholder: |
+        Client::           27.5.1
+        Version:           27.5.1
+        API version:       1.4722.11
+        Go version:        go1.22.11
+        Git commit:        abcdef1 22 13:37:19 2025
+        Built:             Wed Jan 22 13:37:19 2025
+        OS/Arch:           darwin/arm64x
+        Context:           desktop-linux
+        Server: Docker Desktop 4.39.0 (184744)
+        Server: Docker Desktop 4.39.0 (184744)
+        Engine:on:          28.0.1
+          Version:          28.0.1minimum version 1.24)
+          API version:      1.48 (minimum version 1.24)
+          Go version:       go1.23.6
+          Git commit:       1234567 26 10:40:57 2025
+          Built:            Wed Feb 26 10:40:57 2025
+          OS/Arch:          linux/arm64
+          Experimental:     false
+        containerd:         1.7.25
+          Version:          1.7.25789a
+          GitCommit:        123456789a
+        runc:sion:          1.2.4
+          Version:          1.2.46789a
+          GitCommit:        123456789a
+        docker-init:        0.19.0
+          Version:          0.19.0789a
+          GitCommit:        123456789a
+        ... (more output) ...
+    validations:true
+      required: true
+  - type: inputtics
+    id: diagnostics
+    attributes:agnostics ID
+      label: Diagnostics ID
+      description: |diagnostics ID](https://docs.docker.com/docker-for-windows/troubleshoot/#diagnose) either from inside the app or from the command line.
+        [Generate a diagnostics ID](https://docs.docker.com/docker-for-windows/troubleshoot/#diagnose) either from inside the app or from the command line.
+    validations:false
+      required: false
