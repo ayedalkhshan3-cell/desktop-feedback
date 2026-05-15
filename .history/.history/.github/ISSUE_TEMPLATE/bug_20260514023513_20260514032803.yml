@@ -9,6 +9,7 @@ body:
     attributes:
       value: |
         **Thanks for taking the time to report a bug!**
+
         If this is a security issue, please email the [Docker Security team](mailto:security@docker.com) instead of opening a public issue.
 
         To help us investigate faster, please include:
