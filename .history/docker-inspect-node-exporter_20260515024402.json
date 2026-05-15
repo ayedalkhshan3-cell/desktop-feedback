@@ -1,0 +1,223 @@
+{
+  "Id": "8b3db10d0e34fa353b870b125cc8020f86d3a0aea3b0a5742f5e47778ab2066f",
+  "Created": "2017-08-12T19:10:46.615919275Z",
+  "Path": "/bin/node_exporter",
+  "Args": [
+    "-collector.procfs=/home/proc",
+    "-collector.sysfs=/sys",
+    "-collector.filesystem.ignored-mount-points=\"^/(sys|proc|dev|host|etc)($|/)\""
+  ],
+  "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 1098,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2017-08-12T19:10:47.550407421Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "Image": "sha256:84777c63fa61b03be3d6bc1f11f66db4f3e868ec1bb90195edb6ce54e889de7f",
+  "ResolvConfPath": "/var/lib/docker/containers/8b3db10d0e34fa353b870b125cc8020f86d3a0aea3b0a5742f5e47778ab2066f/resolv.conf",
+  "HostnamePath": "/var/lib/docker/containers/8b3db10d0e34fa353b870b125cc8020f86d3a0aea3b0a5742f5e47778ab2066f/hostname",
+  "HostsPath": "/var/lib/docker/containers/8b3db10d0e34fa353b870b125cc8020f86d3a0aea3b0a5742f5e47778ab2066f/hosts",
+  "LogPath": "/var/lib/docker/containers/8b3db10d0e34fa353b870b125cc8020f86d3a0aea3b0a5742f5e47778ab2066f/8b3db10d0e34fa353b870b125cc8020f86d3a0aea3b0a5742f5e47778ab2066f-json.log",
+  "Name": "/ecs-prometheus-node-expo-cadvisor-7-node-exporter-a28ab7a0bfb6da9f4a00",
+  "RestartCount": 0,
+  "Driver": "devicemapper",
+  "MountLabel": "",
+  "ProcessLabel": "",
+  "AppArmorProfile": "",
+  "ExecIDs": null,
+  "HostConfig": {
+    "Binds": [
+      "/:/rootfs:ro",
+      "/sys:/sys:ro",
+      "/proc:/home/proc:ro"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+      "Type": "json-file",
+      "Config": {}
+    },
+    "NetworkMode": "bridge",
+    "PortBindings": {
+      "9100/tcp": [
+        {
+          "HostIp": "0.0.0.0",
+          "HostPort": "9100"
+        }
+      ]
+    },
+    "RestartPolicy": {
+      "Name": "",
+      "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "CapAdd": null,
+    "CapDrop": null,
+    "Dns": null,
+    "DnsOptions": null,
+    "DnsSearch": null,
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": null,
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "ConsoleSize": [
+      0,
+      0
+    ],
+    "Isolation": "",
+    "CpuShares": 2,
+    "Memory": 134217728,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DiskQuota": 0,
+    "KernelMemory": 0,
+    "MemoryReservation": 0,
+    "MemorySwap": 268435456,
+    "MemorySwappiness": -1,
+    "OomKillDisable": false,
+    "PidsLimit": 0,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0
+  },
+  "GraphDriver": {
+    "Name": "devicemapper",
+    "Data": {
+      "DeviceId": "10239",
+      "DeviceName": "docker-202:1-263258-da84893bcb33831266ab4f45868ead7fd53b9b709beeb34813ffd850361a5f25",
+      "DeviceSize": "10737418240"
+    }
+  },
+  "Mounts": [
+    {
+      "Source": "/",
+      "Destination": "/rootfs",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Source": "/sys",
+      "Destination": "/sys",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Source": "/proc",
+      "Destination": "/home/proc",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    }
+  ],
+  "Config": {
+    "Hostname": "8b3db10d0e34",
+    "Domainname": "",
+    "User": "",
+    "AttachStdin": false,
+    "AttachStdout": false,
+    "AttachStderr": false,
+    "ExposedPorts": {
+      "9100/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "Cmd": [
+      "-collector.procfs=/home/proc",
+      "-collector.sysfs=/sys",
+      "-collector.filesystem.ignored-mount-points=\"^/(sys|proc|dev|host|etc)($|/)\""
+    ],
+    "Image": "3634234092344.dkr.ecr.us-east-1.amazonaws.com/bxbd/node-exporter",
+    "Volumes": null,
+    "WorkingDir": "",
+    "Entrypoint": [
+      "/bin/node_exporter"
+    ],
+    "OnBuild": null,
+    "Labels": {
+      "com.amazonaws.ecs.cluster": "DevOps-Cluster",
+      "com.amazonaws.ecs.container-name": "node-exporter",
+      "com.amazonaws.ecs.task-arn": "arn:aws:ecs:us-east-1:366611831214:task/c908a851-3700-4171-ab33-71d646802e19",
+      "com.amazonaws.ecs.task-definition-family": "prometheus-node-expo-cadvisor",
+      "com.amazonaws.ecs.task-definition-version": "7"
+    }
+  },
+  "NetworkSettings": {
+    "Bridge": "",
+    "SandboxID": "ee46b0d5f1c81d26c0a91434f01b69bff726eb79df47c3b0d2ba5d634ce644a0",
+    "HairpinMode": false,
+    "LinkLocalIPv6Address": "",
+    "LinkLocalIPv6PrefixLen": 0,
+    "Ports": {
+      "9100/tcp": [
+        {
+          "HostIp": "0.0.0.0",
+          "HostPort": "9100"
+        }
+      ]
+    },
+    "SandboxKey": "/var/run/docker/netns/ee46b0d5f1c8",
+    "SecondaryIPAddresses": null,
+    "SecondaryIPv6Addresses": null,
+    "EndpointID": "49eb199e5228e37d063833165ac1cbd7addad56bf6ac22ff321cfab864f2b069",
+    "Gateway": "172.17.0.1",
+    "GlobalIPv6Address": "",
+    "GlobalIPv6PrefixLen": 0,
+    "IPAddress": "172.17.0.2",
+    "IPPrefixLen": 16,
+    "IPv6Gateway": "",
+    "MacAddress": "02:42:ac:11:00:02",
+    "Networks": {
+      "bridge": {
+        "IPAMConfig": null,
+        "Links": null,
+        "Aliases": null,
+        "NetworkID": "6636b616d03eb3bbce8a8b8474ab3153644f187c04de801c226cf4abb1ed35bd",
+        "EndpointID": "49eb199e5228e37d063833165ac1cbd7addad56bf6ac22ff321cfab864f2b069",
+        "Gateway": "172.17.0.1",
+        "IPAddress": "172.17.0.2",
+        "IPPrefixLen": 16,
+        "IPv6Gateway": "",
+        "GlobalIPv6Address": "",
+        "GlobalIPv6PrefixLen": 0,
+        "MacAddress": "02:42:ac:11:00:02"
+      }
+    }
+  }
+}
